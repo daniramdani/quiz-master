@@ -1,0 +1,21 @@
+h3.text-center Admin - Edit Question
+div
+  table.table.table-striped.table-bordered.table-hover.table-condensed
+    tr.text-center
+      td.td-custom
+        form#edit-question.form-horizontal name="question"
+          .control-group
+            label.control-label for="description"
+              | Description
+            .controls
+             input#name name="description" type="text" value=="<%= @description %>"
+          .control-group
+            label.control-label for="answer"
+              | Answer
+            .controls
+             input#name name="answer" type="text" value=="<%= @answer %>"
+          .control-group
+            .controls
+              a href="#/questions" Back
+              '&nbsp;&nbsp;
+              input.btn type="submit" class="btn btn-success" value="Update Question"

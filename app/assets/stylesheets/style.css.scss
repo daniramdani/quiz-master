@@ -1,0 +1,40 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+html, body, .container-table {
+    height: 100%;
+}
+
+.container-table {
+    display: table;
+}
+
+.vertical-center-row {
+    vertical-align: middle;
+}
+
+.table th {
+   text-align: center;
+}
+
+.table td.td-custom {
+   padding-top: 25px;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+.space-top {
+  margin-top: 50px;
+}
+
+.space-top1 {
+  margin-top: 10px;
+}
+
+#desk {
+  overflow:scroll;
+  max-height:300px
+}
+

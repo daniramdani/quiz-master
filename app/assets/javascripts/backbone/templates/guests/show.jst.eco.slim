@@ -1,0 +1,21 @@
+h3.text-center Answer Question
+div
+  table.table.table-striped.table-bordered.table-hover.table-condensed
+    tr.text-center
+      td.td-custom
+        form#answer-question.form-horizontal name="answer"
+          .control-group
+            label.control-label for="question"
+              | Question
+            label.control-label for="question"
+              = "<%= @description %>".html_safe
+          .control-group
+            label.control-label for="question"
+              | Answer
+            .controls
+             input#name name="answer" type="text"
+          .control-group
+            .controls
+              a href="#/guests" Cancel
+              '&nbsp;&nbsp;
+              input type="submit" class="btn btn-success" value="Submit"

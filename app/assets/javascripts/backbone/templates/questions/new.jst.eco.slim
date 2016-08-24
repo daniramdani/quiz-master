@@ -1,0 +1,81 @@
+h3.text-center Admin - Create Question
+div
+  table.table.table-striped.table-bordered.table-hover.table-condensed
+    tr.text-center
+      td.td-custom
+        form#new-question.form-horizontal name="question"
+          .control-group
+            label.control-label for="description"
+              | Description
+            .controls
+             div.container
+              div.row
+                div.btn-toolbar data-role="editor-toolbar" data-target="#desk"
+                  div.btn-group
+                    a.btn.dropdown-toggle data-toggle="dropdown" title="" data-original-title="Font"
+                      i.icon-font
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a data-edit="fontName Serif" style="font-family:'Serif'" Serif
+                      li
+                        a data-edit="fontName Sans" style="font-family:'Sans'" Sans
+                      li
+                        a data-edit="fontName Arial" style="font-family:'Arial'" Arial
+                      li
+                        a data-edit="fontName Arial Black" style="font-family:'Arial Black'" Arial Black
+                      li
+                        a data-edit="fontName Courier" style="font-family:'Courier'" Courier
+                      li
+                        a data-edit="fontName Courier New" style="font-family:'Courier New'" Courier New
+                      li
+                        a data-edit="fontName Comic Sans MS" style="font-family:'Comic Sans MS'" Comic Sans MS
+                      li
+                        a data-edit="fontName Helvetica" style="font-family:'Helvetica'" Helvetica
+                      li
+                        a data-edit="fontName Impact" style="font-family:'Impact'" Impact
+                      li
+                        a data-edit="fontName Lucida Grande" style="font-family:'Lucida Grande'" Lucida Grande
+                      li
+                        a data-edit="fontName Lucida Sans" style="font-family:'Lucida Sans'" Lucida Sans
+                      li
+                        a data-edit="fontName Tahoma" style="font-family:'Tahoma'" Tahoma
+                      li
+                        a data-edit="fontName Times" style="font-family:'Times'" Times
+                      li
+                        a data-edit="fontName Times New Roman" style="font-family:'Times New Roman'" Times New Roman
+                      li
+                        a data-edit="fontName Verdana" style="font-family:'Verdana'" Verdana
+                  div.btn-group
+                    a.btn.dropdown-toggle data-toggle="dropdown" title="" data-original-title="Font Size"
+                      i.icon-text-height
+                      '&nbsp;
+                      b.caret
+                    ul.dropdown-menu
+                      li
+                        a data-edit="fontSize 5"
+                          font size="5" Huge
+                      li
+                        a data-edit="fontSize 3"
+                          font size="3" Normal
+                      li
+                        a data-edit="fontSize 1"
+                          font size="1" Small
+                  div.btn-group
+                    a.btn data-edit="bold" title="" data-original-title="Bold (Ctrl/Cmd+B)"
+                      i.icon-bold
+                    a.btn data-edit="italic" title="" data-original-title="Italic (Ctrl/Cmd+I)"
+                      i.icon-italic
+                    a.btn data-edit="underline" title="" data-original-title="Underline (Ctrl/Cmd+U)"
+                      i.icon-text-width
+                div#desk.well.col-md-9 name="description" type="text" value=="<%= @description %>"
+          .control-group
+            label.control-label for="answer"
+              | Answer
+            .controls
+             input#name name="answer" type="text" value=="<%= @answer %>"
+            .control-group
+              .controls
+                a href="#/questions" Cancel
+                '&nbsp;&nbsp;
+                input type="submit" class="btn btn-success" value="Submit"

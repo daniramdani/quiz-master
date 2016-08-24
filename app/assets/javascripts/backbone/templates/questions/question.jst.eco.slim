@@ -1,0 +1,8 @@
+td
+  = link_to "<%= @description %>".html_safe, "#/questions/<%= @id %>".html_safe
+td= '<%= @answer %>'.html_safe
+td
+  a.icon-edit href=="#/questions/<%= @id %>/edit"
+  '&nbsp;&nbsp;
+  a.destroy.icon-remove href=="#/questions"
+

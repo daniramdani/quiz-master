@@ -1,0 +1,14 @@
+h3.text-center Admin - Show Question
+a href="#/questions" Back
+div.space-top1
+  table.table.table-striped.table-bordered.table-hover.table-condensed
+    tr
+      td
+        b Description
+      td
+        = "<%= @description %>".html_safe
+    tr
+      td
+        b Answer
+      td
+        = "<%= @answer %>".html_safe
